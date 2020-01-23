@@ -2,7 +2,7 @@
 Setting up an in-house cluster
 
 ### FIRST STEP: Downloading the OS and setting up the repository
-The ISO image will be downloaded in the folder `/distro/iso/`, which is already created. We are going to use CentOS 7.5 in our cluster. The ISO image was downloaded from the mirror in the UPB:
+The ISO image will be downloaded in the folder `/distro/iso/`, which is already created. We are going to use CentOS 7.7 in our cluster. The ISO image was downloaded from the mirror in the UPB:
 ```
 $> cd /distro/iso
 ```
