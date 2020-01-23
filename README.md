@@ -5,11 +5,13 @@ Setting up an in-house cluster
 The ISO image will be downloaded in the folder `/distro/iso/`, which is already created. We are going to use CentOS 7.5 in our cluster. The ISO image was downloaded from the mirror in the UPB:
 ```
 $> cd /distro/iso
-$> cd wget http://mirror.upb.edu.co/centos/7.5.1804/isos/x86_64/CentOS-7-x86_64
 ```
 Create a folder where the repository is going to be located:
 ```
-$> mkdir -pv /distro/CentOS-7.5-x86_64
+$> mkdir -pv /distro/CentOS-7.7-x86_64
+$> cd CentOS-7.7-x86_64
+$>  wget http://mirror.unimagdalena.edu.co/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-DVD-1908.iso
+
 ```
 The following commands allow us to check if the ISO image is correct:
 ```
@@ -53,7 +55,7 @@ The options for each of the hosts must be placed in parentheses directly after t
 ```
 
 
-### / etc / hosts
+### /etc/hosts
 This file is used to obtain a relation between a machine name and an IP address: on each line of `/ etc /` hosts an IP address and the corresponding machine names are specified, so that a user does not have to remember addresses but host names. Usually they include the addresses, names and aliases of all the equipment connected to the local network. The purpose of assigning names to IP numbers is to make them easy for people to remember. Actually, an IP address identifies a network interface associated with a device such as a network card. Since each computer can have several network cards and several interfaces on each card, a single computer can have several names in the domain name system. Each team is identified The format of a line in this file can be
 ```
 
